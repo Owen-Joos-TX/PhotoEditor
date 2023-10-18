@@ -1,0 +1,31 @@
+Display
+
+<Display>:
+    Image:
+        id: imageName
+        source: root.loadImage()
+    BoxLayout:
+        orientation: "horizontal"
+
+        GridLayout:
+            rows: 3
+            size_hint: 1,0.3
+            spacing: "5dp"
+            Button:
+                text: "black&white"
+            Button:
+                text: "halo"
+            Button:
+                text: "linedrawing"
+            Button:
+                text: "Sepia"
+            Button:
+                text: "Inverse"
+            Button:
+                text: "Pointilism"
+            TextInput:
+                id: textInput
+                text: ""
+            Button:
+                text: "load"
+                on_press: root.getImage()
