@@ -12,17 +12,20 @@ Display
             size_hint: 1,0.3
             spacing: "5dp"
             Button:
-                text: "black&white"
-            Button:
-                text: "halo"
+                text: "Red"
+                on_press: root.red()
             Button:
                 text: "linedrawing"
+                on_press: root.line_drawing()
             Button:
                 text: "Sepia"
+                on_press: root.sepia()
             Button:
                 text: "Inverse"
+                on_press: root.invert()
             Button:
                 text: "Pointilism"
+                on_press: root.pointillism()
             TextInput:
                 id: textInput
                 text: ""
